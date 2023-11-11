@@ -1,0 +1,372 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.5s, color 0.5s; 
+    padding-top: 60px;
+}
+
+/* Light Mode Styles */
+.light-mode {
+    background-color: #c9a882;
+    color: #333;
+}
+
+.light-mode .cat-table {
+    color: white;
+}
+
+.light-mode .info-table {
+    color: white;
+}
+
+.light-mode .profile-table {
+    color: white;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #5e352a;
+    color: #fff;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color:rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 16px;
+    margin-top: 5px;
+    transition: top 0.3s;
+}
+
+.navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    display: block;
+    color:#764103;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 12px; 
+}
+
+.navbar-title {
+    color: white; /* Warna judul navbar */
+    font-size: 24px; /* Ukuran font judul navbar */
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5px; /* Jarak antara logo dan judul */
+    position: relative;
+}
+
+
+.menu-links {
+    display: flex; /* Mengubah menu-links menjadi flex container */
+    align-items: center; /* Menyusun elemen-elemen secara vertikal di tengah */
+}
+
+.menu-links a {
+    display: block;
+    color: #764103;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+.mode-button {
+    color: white;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+.navbar .navbar-button {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 2px 4px;
+}
+
+.navbar a:hover,
+.navbar .navbar-button:hover {
+    background-color: #764103;
+    color: white;
+}
+
+.navbar-brand img {
+    margin: 10px; 
+}
+
+.navbar input[type=text] {
+    float: left;
+    padding: 6px;
+    border: 3px solid #764103;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    font-size: 14px;
+    width: 130%;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar a, .profile-table {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px; 
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px; 
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Profile Styles */
+.profile-table {
+    padding: 10px;
+}
+
+.profile-table img {
+    max-width: 100px;
+    max-height: auto;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+.profile-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-table {
+    width: 100%;
+}
+
+.profile-table td {
+    vertical-align: middle;
+}
+
+.profile-image {
+    max-width: 200px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.profile-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-table {
+    background-color: #4d3d33;
+    padding: 20px;
+    width: 100%
+}
+
+.profile-table {
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.profile-table td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.profile-image {
+    max-width: 200px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.profile-table img {
+    max-width: 200px;
+    max-height: 100px;
+    background-color: transparent;
+}
+
+.instagram-button {
+    border: none; 
+    padding: 0px; 
+}
+
+.instagram-button img {
+    width: 36px; 
+    height: 36px; 
+}
+
+.content {
+    padding: 100px;
+    text-align: center;
+    color: white;
+}
+
+.profile-table td {
+    padding: 10px;
+}
+
+.content {
+    padding: 100px;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: #c9a882;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+/* Profil Styling */
+.profile-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-table {
+    width: 100%;
+}
+
+.profile-table td {
+    vertical-align: top;
+}
+
+/* Batas di antara profil dan latar belakang */
+.profile-divider {
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+/* Cat Container Styles */
+.cat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+}
+
+.cat-table {
+    background-color: #4d3d33;
+    border: 1px solid #ccc;
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info-table {
+    background-color: #4d3d33;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cat-image {
+    max-width: 100%;
+}
+
+.cat-name {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.cat-description {
+    padding: 10px;
+}
+
+.cat-table img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gif-container {
+    margin-right: center; /* Posisikan ke sebelah kiri */
+}
+
+.gif-image {
+    width: 70px; 
+    height: auto; /* Biarkan tingginya menyesuaikan agar tidak terdistorsi */
+}
+
+/* Footer */
+.footer-divider {
+    border-top: 1px solid #ccc;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.site-footer {
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; 
+    background-color: #764103;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: display 0.5s;
+}
+
+footer a {
+    color: #fff; /* Warna teks link putih */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
